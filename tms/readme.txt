@@ -1,16 +1,27 @@
-Installation Steps(Configuration)
-1. Download and Unzip file on your local system.
-2.Copy tms folder and tms folder inside root directory (for xampp xampp/htdocs, for wamp wamp/www, for lamp var/www/html)
+# Tour Package Recommendation System
 
-Database Configuration
+##  Installation Steps (Configuration)
+1. Download and unzip the project files to your local system.
+2. Copy the `tms` folder and place it inside your web server's root directory:
+   - **XAMPP**: `xampp/htdocs`
+   - **WAMP**: `wamp/www`
+   - **LAMP**: `var/www/html`
 
-Open phpmyadmin
-Create Database tms
-Import database tms.sql (available inside zip package)
-Open Your browser put inside browser “http://localhost/tta”
+---
+##  Database Configuration
+
+1. Open **phpMyAdmin**.
+2. Create a new database named `tms`.
+3. Import the SQL file: `tms.sql` (available inside the zip/package).
+4. Ensure your MySQL is running on **port 3308** (instead of the default 3306).  
+   Update your connection settings (e.g., `config.php`) like this:
+
+   ```php
+   $con = mysqli_connect("localhost:3308", "root", "", "tms");
+
 
 Login Details for admin : 
-Open Your browser put inside browser “http://localhost/tta/admin”
+Open Your browser put inside browser “http://localhost/tms/admin”
 Username : admin
-Password : admin
+Password : admin1
 
