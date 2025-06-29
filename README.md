@@ -22,5 +22,5 @@
 Login Details for admin : 
 Open Your browser put inside browser “http://localhost/tms/admin”
 Username : admin
-Password : admin1
+Password : admin
 
